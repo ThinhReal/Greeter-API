@@ -1,4 +1,4 @@
-Below are 3 challenges designed to help you break and fix Spring's Dependency Injection.
+🥰 Below are 3 challenges designed to help you break and fix Spring's Dependency Injection.
 
 ### Challenge 1: The "Ambiguity" Conflict
 Goal: Learn how Spring handles multiple implementations of the same interface.
@@ -44,3 +44,5 @@ Goal: Learn that DI isn't just for classes, but also for configuration data.
 Task: Change the message in the .properties file and restart the app.
 
 Verification: Check if the API response updates without you changing any Java code.
+
+### Answers are in these branchs: practice1, practice2, practice3
