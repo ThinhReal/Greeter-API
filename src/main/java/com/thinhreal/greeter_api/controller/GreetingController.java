@@ -1,6 +1,8 @@
 package com.thinhreal.greeter_api.controller;
 
+import com.thinhreal.greeter_api.service.EnglishGreetingService;
 import com.thinhreal.greeter_api.service.GreetingService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,7 +12,7 @@ public class GreetingController {
     private final GreetingService greetingService;
 
     // Constructor Injection: Spring tự động tìm GreetingService và "bơm" vào đây
-    public GreetingController(GreetingService greetingService) {
+    public GreetingController(@Qualifier("vietnameseGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
