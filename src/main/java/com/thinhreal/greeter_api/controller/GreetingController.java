@@ -12,7 +12,7 @@ public class GreetingController {
     private final GreetingService greetingService;
 
     // Constructor Injection: Spring tự động tìm GreetingService và "bơm" vào đây
-    public GreetingController(@Qualifier("vietnameseGreetingService") GreetingService greetingService) {
+    public GreetingController(@Qualifier("englishGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
